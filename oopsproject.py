@@ -6,7 +6,7 @@ class PasswordManager:
 
     def authenticate(self, entered_id):
         if entered_id == self.unique_id:
-            print(f"Access granted. Welcome, {self.username}!")
+            print("Access granted. Welcome",self.username)
             return True
         else:
             print("Access denied. Invalid unique ID code.")
@@ -84,6 +84,4 @@ def main():
             else:
                 print("Invalid option selected.")
 
-
-if __name__ == "__main__":
-    main()
+main()
